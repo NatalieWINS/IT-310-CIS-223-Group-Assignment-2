@@ -12,6 +12,7 @@ index = 0
 while the index < list size
 	Find the minimum value in that list
 	swap it with the index
+	Then iterate the index
 finally, return the sorted list
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
