@@ -1,0 +1,42 @@
+Write me some pseudocode for one pass of the SelectionSort algorithm through random values stored in an Unordered-List, or Linked-List, of values (rather than a standard "Python" List).
+●    How would you implement a swap using a Linked-List?
+●    What is the minimum number of variables required? 
+
+Step me through an illustrated example (including all needed variables/arrows) of a Linked-List of size 5, where the positions of nodes 3 and 4 are swapped.Show the pseudocode to accomplish this in your report.
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+SelectionSort psuedocode:
+
+Take in a list
+index = 0
+while the index < list size
+	Find the minimum value in that list
+	swap it with the index
+finally, return the sorted list
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Swap pseudocode:
+
+A linked list is made of pointers (nodes) that point to data and also the *next* pointer in the list
+So to swap 2 values:
+take in the previous pointers for both values you want to swap (because you need to change the connection, and the list doesn't keep track of the previous)
+pointers *beforeA and *beforeB
+
+Also take in the pointers you want to swap themselves
+pointers *A and *B
+
+First part of the swap: swapping where the previous nodes point
+initialize *tmp
+tmp = beforeA
+beforeA = beforeB
+beforeB = tmp
+Now beforeA should point to B, and beforeB should point to A
+
+Second, swap where A and B point
+tmp = A
+A = B
+B = tmp
+Now, A's next should be where B pointed, and B's next should be where A pointed.
+
+The swap is done now, so either return the pointers if necessary, otherwise return void
+
