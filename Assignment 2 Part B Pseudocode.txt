@@ -40,4 +40,5 @@ B = tmp
 Now, A's next should be where B pointed, and B's next should be where A pointed.
 
 The swap is done now, so either return the pointers if necessary, otherwise return void
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Swap for a linked list requires 4 variables minimum (2 pointers that point to the node, and 2 pointers that the node points to). These may be NULL values.
