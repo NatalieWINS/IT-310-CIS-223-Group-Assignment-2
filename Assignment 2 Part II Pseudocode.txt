@@ -13,6 +13,8 @@ while the index < list size
 	Then iterate the index
 finally, return the sorted list
 
+
+For one pass, ignore the while condition and just return after the first swap.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 Swap pseudocode:
 
